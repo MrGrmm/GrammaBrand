@@ -1,0 +1,26 @@
+*.pyc
+__pycache__/
+*.db
+*.sqlite3
+*.pyo
+*.log
+.env
+local_settings.py
+media/
+
+# If you're using a virtualenv, ignore it
+venv/
+env/
+
+# Specific to the Django
+*.migrations/
+static/
+.DS_Store
+# Ignore the sqlite database if you are using it.
+db.sqlite3
+
+# Additional files and folders
+.idea/
+.vscode/
+*.swp
+*~
