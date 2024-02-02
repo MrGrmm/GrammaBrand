@@ -1,0 +1,50 @@
+/* Header.css */
+
+.header {
+    background-color: #191919; /* Предположим, что фон темно-серый */
+    height: 112px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px; /* Отступы согласно вашему макету */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Пример шрифта */
+  }
+  
+
+  .header__logo_112x112 {
+    display: flex;
+    align-items: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%; /* Делает элемент круглым */
+  }
+  
+  
+  
+  .header__logo span {
+    margin-left: 0px; /* Отступ текста от логотипа */
+    font-weight: bold;
+    font-size: 24px; /* Размер шрифта логотипа */
+  }
+  
+  .header__navigation {
+    display: flex;
+    justify-content: space-between; /* Или 'space-around' для равномерного распределения с пространством вокруг элементов */
+    
+  }
+  
+  .header__navigation a {
+    /* Ваши стили для ссылок, например: */
+    background-color: #000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    border-radius: 5px; /* Скругление углов */
+    text-decoration: none; /* Убрать подчёркивание текста */
+  }
+  
+  /* Стили для изменения вида при наведении курсора мыши */
+  .header__navigation a:hover {
+    background-color: #333; /* Цвет фона при наведении */
+  }
+  
