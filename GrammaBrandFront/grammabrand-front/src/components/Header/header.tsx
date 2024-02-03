@@ -6,10 +6,9 @@ const Header = () => {
     <header className="header">
       {/* Если у вас есть логотип как изображение */}
       <img src="header_logo_112x112.png" alt="Logo" className="header__logo-img" />
-      <div className="header__logo">ION GRAMMA</div> {/* Если логотип текстовый */}
-      {/* Если у вас текстовый логотип */}
-      {/* <div className="header__logo">ION GRAMMA</div> */}
-      
+      <div className="header__logo">
+        <span>ION GRAMMA</span> {/* Теперь текст обернут в span */}
+    </div>
       <nav className="header__navigation">
         {/* Элементы навигации */}
         <a href="/blog">Blog</a>

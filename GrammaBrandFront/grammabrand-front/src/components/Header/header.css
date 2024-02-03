@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px; /* Отступы согласно вашему макету */
+    padding: 0px 10px; /* Отступы согласно вашему макету */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Пример шрифта */
   }
   
@@ -23,9 +23,9 @@
   
   
   .header__logo span {
-    margin-left: 0px; /* Отступ текста от логотипа */
+    margin-right: 450px; /* Отступ текста от логотипа */
     font-weight: bold;
-    font-size: 24px; /* Размер шрифта логотипа */
+    font-size: 36px; /* Размер шрифта логотипа */
   }
   
   .header__navigation {

@@ -14,9 +14,8 @@
 }
 
 .footer__logo img {
-    width: 112px; /* Размер логотипа */
-    height: 112px;
-    border-radius: 50%; /* Круглое изображение */
+    width: 386px; /* Размер логотипа */
+    height: 338px;
 }
 
 .footer__social-links a {
