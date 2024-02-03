@@ -10,7 +10,7 @@ const Footer = () => {
         <p>+39555459823</p>
       </div>
       <div className="footer__logo">
-        <img src="footer_logo_name.png" alt="ION GRAMMA" />
+        <img src="footer_logo_name.svg" alt="ION GRAMMA" />
       </div>
       <div className="footer__social-links">
         {/* Здесь должны быть иконки или текстовые ссылки на ваши социальные сети */}
