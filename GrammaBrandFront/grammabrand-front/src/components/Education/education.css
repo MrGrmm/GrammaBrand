@@ -1,11 +1,11 @@
 .education {
-    margin-left: 70px;
-    margin-top: -670px;
-    background-color: #000000; /* Черный фон */
-    color: white; /* Белый текст */
-    padding: 20px; /* Отступы */
+    margin-left: 20px;
+    width: 487px;
+    background-color: #000000;
+    color: white;
+    padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+  }
 
 .education h1, .education h2 {
     font-size: 36px; /* Большой размер шрифта для заголовков */

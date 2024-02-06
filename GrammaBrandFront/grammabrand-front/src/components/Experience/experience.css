@@ -1,8 +1,11 @@
 .experience {
-    margin-left: 616px; /* 586px ширина фото + 30px отступ */
-    background-color: #000000; /* Черный фон */
-    color: white; /* Белый текст */
-    padding: 20px; /* Отступы */
+    width: 800px;
+    height: 700px;
+    margin-top: -460px;
+    margin-left: 550px;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -23,6 +26,9 @@
 
 .experience-item {
     margin-bottom: 20px; /* Отступ между блоками опыта */
+    white-space: nowrap; /* если есть, попробуйте удалить или изменить на normal */
+    word-break: break-all; /* если есть, попробуйте удалить или изменить на normal */
+    width: 100%; /* убедитесь, что ширина достаточная для содержимого */
 }
 
 .experience-item ul {
