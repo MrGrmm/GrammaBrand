@@ -23,7 +23,7 @@
   
   
   .header__logo span {
-    margin-right: 450px; /* Отступ текста от логотипа */
+    margin-right: 200px; /* Отступ текста от логотипа */
     font-weight: bold;
     font-size: 36px; /* Размер шрифта логотипа */
   }

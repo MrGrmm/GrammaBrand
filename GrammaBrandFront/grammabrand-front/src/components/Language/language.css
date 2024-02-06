@@ -1,8 +1,8 @@
 .language {
-    margin-left: 70px;
-    background-color: #000000; /* Черный фон */
-    color: white; /* Белый текст */
-    padding: 20px; /* Отступы */
+    margin-left: 20px;
+    width: 487px;
+    background-color: #000000;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

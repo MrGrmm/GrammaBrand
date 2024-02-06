@@ -14,14 +14,12 @@ function App() {
       <main className="main">
         <Myself />
         <div className="vertical-line"></div>
-        <div className="left-content">
-          <Experience />
+        <div className="education">
           <Education />
-          {/* Другие компоненты левой части */}
         </div>
-        <div className="right-content">
+          <Experience />
+        <div className="language">
           <Language />
-          {/* Другие компоненты правой части */}
         </div>
       </main>
       <Footer />

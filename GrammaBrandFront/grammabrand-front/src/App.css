@@ -6,12 +6,17 @@
   background-color: black;
 }
 
+
 .header,
-.main,
 .footer {
   position: relative;
-  width: 100%;
 }
+
+
+.main {
+  position: relative;
+}
+
 
 .vertical-line {
   position: absolute;
@@ -20,13 +25,4 @@
   bottom: 0;
   width: 2px;
   background-color: white;
-}
-
-/* Стили для левой и правой части main */
-.left-content {
-  width: 50%;
-}
-
-.right-content {
-  width: 50%;
 }
