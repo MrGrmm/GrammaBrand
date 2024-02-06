@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import './myself.css';
 
-const Myself = () => {
-  // Ваш JSX код для компонента
+interface MyselfProps {
+  myselfRef: RefObject<HTMLDivElement>;
+}
+
+const MySelf: React.FC<MyselfProps> = ({ myselfRef }) => {
   return (
-    <div className='myself'>
+    <div ref={myselfRef} className="myself">
       <img src="my_photo.jpg" alt="my_photo" className="myself_photo" />
       <div className="myself-text">
         {/* Текст и заголовки */}
@@ -25,7 +28,6 @@ const Myself = () => {
       </div>
     </div>
   );
-
 };
 
-export default Myself;
+export default MySelf;
