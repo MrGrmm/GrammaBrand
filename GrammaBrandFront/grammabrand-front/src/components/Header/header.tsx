@@ -20,8 +20,9 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, myselfRef }) => {
 
   return (
     <header className="header">
-      {/* Если у вас есть логотип как изображение */}
-      <img src="header_logo_112x112.png" alt="Logo" className="header__logo-img" />
+      <Link to="/">
+        <img src="header_logo_112x112.png" alt="Logo" className="header__logo-img" />
+      </Link>
       <div className="header__logo">
         <span>ION GRAMMA</span> {/* Теперь текст обернут в span */}
       </div>
