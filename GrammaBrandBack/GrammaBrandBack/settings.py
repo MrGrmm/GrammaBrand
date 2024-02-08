@@ -37,6 +37,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # Application definition
 
 INSTALLED_APPS = [
+    'HomePage',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
