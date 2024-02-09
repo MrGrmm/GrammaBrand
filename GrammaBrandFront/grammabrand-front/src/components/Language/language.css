@@ -1,29 +1,24 @@
-.education {
+.language {
     margin-left: 20px;
     width: 487px;
     background-color: #000000;
     color: white;
-    padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+}
 
-.education h1, .education h2 {
+.language h1 {
     font-size: 36px; /* Большой размер шрифта для заголовков */
     margin-bottom: 10px; /* Отступ снизу для заголовков */
 }
 
-.education p, .education li {
-    font-size: 18px; /* Размер шрифта для абзацев и элементов списка */
-    margin-bottom: 5px; /* Отступ снизу для абзацев и элементов списка */
-}
-
-.online-trainings ul {
-    list-style-type: none; /* Убрать маркеры списка */
+.language ul {
+    list-style: none; /* Убрать маркеры списка */
     padding: 0; /* Убрать отступы у списка */
 }
 
-.online-trainings li {
-    margin-bottom: 5px; /* Отступ снизу для элементов списка */
+.language li {
+    font-size: 18px; /* Размер шрифта для каждого пункта */
+    margin-bottom: 5px; /* Отступ между пунктами */
 }
 
 /* Добавьте любые дополнительные стили, которые вы хотите применить к секции */

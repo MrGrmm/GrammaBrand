@@ -1,0 +1,38 @@
+.footer {
+    background-color: #191919; /* Цвет фона */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Отступы */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Шрифт */
+}
+
+.footer__contact-info p {
+    margin: 0;
+    padding: 5px 0; /* Вертикальные отступы для параграфов */
+}
+
+.footer__logo img {
+    width: 386px; /* Размер логотипа */
+    height: 338px;
+}
+
+.footer__social-links a {
+    margin-right: 10px; /* Отступ справа для ссылок */
+    color: white; /* Цвет текста ссылок */
+    text-decoration: none; /* Убрать подчёркивание текста */
+}
+
+.footer__social-links a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.footer__activation a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убрать подчёркивание текста */
+}
+
+.footer__activation a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}

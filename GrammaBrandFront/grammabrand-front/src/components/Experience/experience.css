@@ -1,0 +1,58 @@
+.experience {
+    width: 800px;
+    height: 700px;
+    margin-top: -460px;
+    margin-left: 550px;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience h1 {
+    font-size: 36px; /* Большой размер шрифта для заголовков */
+    margin-bottom: 10px; /* Отступ снизу для заголовков */
+}
+
+.experience h2 {
+    font-size: 24px; /* Размер шрифта для подзаголовков */
+    margin-bottom: 5px; /* Отступ снизу для подзаголовков */
+}
+
+.experience p {
+    font-size: 18px; /* Размер шрифта для абзацев */
+    margin-bottom: 5px; /* Отступ снизу для абзацев */
+}
+
+.experience-item {
+    margin-bottom: 20px; /* Отступ между блоками опыта */
+    white-space: nowrap; /* если есть, попробуйте удалить или изменить на normal */
+    word-break: break-all; /* если есть, попробуйте удалить или изменить на normal */
+    width: 100%; /* убедитесь, что ширина достаточная для содержимого */
+}
+
+.experience-item ul {
+    list-style: none; /* Убрать маркеры списка */
+    padding: 0; /* Убрать отступы у списка */
+    margin-left: 20px; /* Отступ для элементов списка */
+}
+
+.experience-item li {
+    position: relative; /* Для позиционирования псевдоэлементов */
+    padding-left: 30px; /* Отступ для текста от маркера */
+    margin-bottom: 5px; /* Отступ между элементами списка */
+}
+
+.experience-item li::before {
+    content: ''; /* Псевдоэлемент для кастомного маркера */
+    position: absolute;
+    left: 0; /* Позиция слева */
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Смещение псевдоэлемента для центрирования */
+    width: 8px; /* Ширина маркера */
+    height: 8px; /* Высота маркера */
+    background-color: #fff; /* Белый цвет маркера */
+    border-radius: 50%; /* Круглый маркер */
+}
+
+/* Добавьте любые дополнительные стили, которые вы хотите применить к секции */
