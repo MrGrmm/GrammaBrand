@@ -1,11 +1,16 @@
 from rest_framework import serializers
-from .models import MySelf, Education, Experience, Languages
+from .models import MySelf, Education, Experience, Languages, MyLink
 
 
 class MySelfSerializer(serializers.ModelSerializer):
     class Meta:
         model = MySelf
         fields = '__all__'
+
+class MyLinkSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MyLink
+        fields = ('linkedin', 'github', 'telegram')
 
 class ExperienceSerializer(serializers.ModelSerializer):
     class Meta:

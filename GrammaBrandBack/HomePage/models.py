@@ -8,6 +8,12 @@ class MySelf(models.Model):
     about_myself = models.TextField()
     stack = models.TextField()
 
+class MyLink(models.Model):
+    linkedin = models.CharField(max_length=255)
+    github = models.CharField(max_length=255)
+    telegram = models.CharField(max_length=255)
+    facebook = models.CharField(max_length=255)
+
 class Experience(models.Model):
     position = models.CharField(max_length=255)
     company = models.CharField(max_length=255)

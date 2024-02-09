@@ -1,68 +1,49 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import './footer.css'; // Убедитесь, что файл стилей подключен правильно
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <div className="footer__contact-info">
-//         <p>Italia, Venice, Mestre</p>
-//         <p>gramma1997ion@gmail.com</p>
-//         <p>+39555459823</p>
-//       </div>
-//       <div className="footer__logo">
-//         <Link to="/">
-//           <img src="footer_logo_name.svg" alt="ION GRAMMA" />
-//         </Link>
-//       </div>
-//       <div className="footer__social-links">
-//         {/* Здесь должны быть иконки или текстовые ссылки на ваши социальные сети */}
-//         {/* Например: */}
-//         <a href="https://www.linkedin.com/in/ion-gramma-74516b29a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-//         <a href="https://github.com/MrGrmm/" target="_blank" rel="noopener noreferrer">GitHub</a>
-//         <a href="http://t.me/MrGrmm/" target="_blank" rel="noopener noreferrer">Telegram</a>
-//       </div>
-//       <div className="footer__activation">
-//         {/* Элемент для активации, если это кнопка или ссылка */}
-//         <a href="/activation-link">Click to open link</a>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios'; // Импортируем Axios
 import './footer.css'; // Убедитесь, что файл стилей подключен правильно
 
-const Footer = () => {
-  interface MySelfData {
-    full_name?: string;
-    address?: string;
-    email?: string;
-    telephone_number?: string;
-    about_myself?: string;
-    stack?: string;
-    // добавьте другие поля, если они есть
-  }
 
+// Определите типы для данных MySelf
+interface MySelfData {
+  id: number;
+  full_name: string;
+  email: string;
+  address: string;
+  telephone_number: string;
+  about_myself?: string; // сделайте это поле необязательным, если оно может отсутствовать
+  stack?: string; // сделайте это поле необязательным, если оно может отсутствовать
+}
+// Дополните интерфейс для данных MyLink
+interface MyLinkData {
+  linkedin: string;
+  github: string;
+  telegram: string;
+  facebook?: string
+  // Дополните с остальными полями, если они есть
+}
+
+const Footer = () => {
   const [mySelfData, setMySelfData] = useState<MySelfData | null>(null);
+  const [myLinkData, setMyLinkData] = useState<MyLinkData | null>(null); // Состояние для данных MyLink
 
   useEffect(() => {
-    // Функция для получения данных о себе из API
-    async function fetchMySelfData() {
+    async function fetchData() {
       try {
-        const response = await axios.get('/api/myself/'); // Запрос к вашему API
-        setMySelfData(response.data);
+        // Получаем данные MySelf
+        const selfResponse = await axios.get('http://127.0.0.1:8000/api/myself/');
+        setMySelfData(selfResponse.data[0]);
+
+        // Получаем данные MyLink
+        const linksResponse = await axios.get('http://127.0.0.1:8000/api/mylink/'); // Предполагается, что URL вашего API такой
+        setMyLinkData(linksResponse.data[0]); // Предполагается, что API возвращает массив
       } catch (error) {
-        console.error('Error fetching MySelf data:', error);
+        console.error('Error fetching data:', error);
       }
     }
 
-    fetchMySelfData(); // Вызываем функцию для получения данных о себе при загрузке компонента
+    fetchData(); // Вызываем функцию для получения данных о себе при загрузке компонента
   }, []);
-
   return (
     <footer className="footer">
       <div className="footer__contact-info">
@@ -70,7 +51,7 @@ const Footer = () => {
           <div>
             <p>{mySelfData.address}</p>
             <p>{mySelfData.email}</p>
-            <p>{mySelfData.telephone_number}</p>
+            <p>+{mySelfData.telephone_number}</p>
           </div>
         )}
       </div>
@@ -80,9 +61,19 @@ const Footer = () => {
         </Link>
       </div>
       <div className="footer__social-links">
-        <a href="https://www.linkedin.com/in/ion-gramma-74516b29a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/MrGrmm/" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="http://t.me/MrGrmm/" target="_blank" rel="noopener noreferrer">Telegram</a>
+      {myLinkData && (
+          <div>
+            <a href={myLinkData.linkedin} target="_blank" rel="noopener noreferrer">
+             <img src="linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href={myLinkData.github} target="_blank" rel="noopener noreferrer">
+              <img src="github.svg" alt="GitHub" />
+            </a>
+            <a href={myLinkData.telegram} target="_blank" rel="noopener noreferrer">
+              <img src="telegram.svg" alt="Telegram" />
+            </a>
+          </div>
+        )}
       </div>
       <div className="footer__activation">
         <a href="/activation-link">Click to open link</a>

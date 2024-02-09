@@ -2,6 +2,7 @@ import React, { RefObject } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
+
 interface HeaderProps {
   experienceRef: RefObject<HTMLDivElement>;
   myselfRef: RefObject<HTMLDivElement>;
@@ -34,6 +35,7 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, myselfRef }) => {
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
       </nav>
+
     </header>
   );
 };
