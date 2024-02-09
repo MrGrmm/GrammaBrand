@@ -37,7 +37,17 @@ import axios from 'axios'; // Импортируем Axios
 import './footer.css'; // Убедитесь, что файл стилей подключен правильно
 
 const Footer = () => {
-  const [mySelfData, setMySelfData] = useState(null);
+  interface MySelfData {
+    full_name?: string;
+    address?: string;
+    email?: string;
+    telephone_number?: string;
+    about_myself?: string;
+    stack?: string;
+    // добавьте другие поля, если они есть
+  }
+
+  const [mySelfData, setMySelfData] = useState<MySelfData | null>(null);
 
   useEffect(() => {
     // Функция для получения данных о себе из API
