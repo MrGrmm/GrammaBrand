@@ -1,17 +1,18 @@
 /* Header.css */
 
 .header {
-    background-color: #191919; /* Предположим, что фон темно-серый */
-    height: 112px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px; /* Отступы согласно вашему макету */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Пример шрифта */
-  }
+  background-color: #191919;
+  height: 112px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
   
-
   .header__logo_112x112 {
     display: flex;
     align-items: center;
@@ -19,32 +20,86 @@
     height: 112px;
     border-radius: 50%; /* Делает элемент круглым */
   }
+
+  .header_logo {
+    align-items: center; /* Если вы хотите, чтобы текст был на одной линии с логотипом */
+    margin-left: -200px; /* Уменьшите значение, чтобы текст был ближе к логотипу */
+    /* остальные стили */
+  }
   
-  
-  
-  .header__logo span {
-    margin-right: 200px; /* Отступ текста от логотипа */
+  .logo_part {
+    font-size: 36px;
     font-weight: bold;
-    font-size: 36px; /* Размер шрифта логотипа */
+    /* Если элементы уже в порядке, margin-right можно не добавлять */
   }
-  
-  .header__navigation {
-    display: flex;
-    justify-content: space-between; /* Или 'space-around' для равномерного распределения с пространством вокруг элементов */
-    
-  }
-  
+
   .header__navigation a {
-    /* Ваши стили для ссылок, например: */
-    background-color: #000; /* Цвет фона */
+    background-color: #191919; /* Цвет фона для кнопок */
     color: #fff; /* Цвет текста */
     padding: 10px 20px; /* Отступы внутри кнопок */
-    border-radius: 5px; /* Скругление углов */
+    margin: 0 10px; /* Расстояние между кнопками */
+    border-radius: 10px; /* Скругление углов */
     text-decoration: none; /* Убрать подчёркивание текста */
+    transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+    display: inline-block; /* Элементы рядом друг с другом */
+    text-align: center; /* Текст по центру */
+    width: 100.8px; /* Ширина каждой кнопки */
+    height: 28px; /* Вкысота каждой кнопки */
+    line-height: 28px; /* Центрирование текста по вертикали */
+  }
+  
+  /* Стили для активной кнопки, если необходимо */
+  .header__navigation a.active {
+    background-color: #555; /* Цвет фона для активной кнопки */
   }
   
   /* Стили для изменения вида при наведении курсора мыши */
   .header__navigation a:hover {
     background-color: #333; /* Цвет фона при наведении */
   }
+
+  .header__navigation .blog {
+    border: 2px solid black; /* Замените #color3 на желаемый цвет рамки для кнопки "Projects" */
+
+  }
+
+  .header__navigation .about_me {
+    background-color: #191919; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: 2px solid #191919; /* Толщина и цвет рамки */
+    border-radius: 5px; /* Радиус скругления углов */
+    font-size: 14px; /* Размер шрифта */
+    cursor: pointer; /* Вид курсора при наведении на кнопку */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
+    text-decoration: underline; /* Добавляет подчеркивание к тексту */
+
+  }
   
+
+
+  .header__navigation .about_exp {
+    background-color: #191919; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: 2px solid #191919; /* Толщина и цвет рамки */
+    border-radius: 5px; /* Радиус скругления углов */
+    font-size: 14px; /* Размер шрифта */
+    cursor: pointer; /* Вид курсора при наведении на кнопку */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
+    text-decoration: underline; /* Добавляет подчеркивание к тексту */
+}
+
+  .header__navigation a.projects {
+    border: 2px solid white; /* Замените #color3 на желаемый цвет рамки для кнопки "Projects" */
+
+  }
+  
+  .header__navigation a.contact {
+    border: 2px solid rgb(63, 63, 63); /* Замените #color4 на желаемый цвет рамки для кнопки "Contact" */
+    background-color: black; /* Цвет фона для кнопок */
+  }
+
+  .header__navigation a.contact:hover {
+    background-color: #646464; /* Цвет фона при наведении */
+  }

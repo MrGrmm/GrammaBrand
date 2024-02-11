@@ -24,16 +24,17 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, myselfRef }) => {
       <Link to="/">
         <img src="header_logo_112x112.png" alt="Logo" className="header__logo-img" />
       </Link>
-      <div className="header__logo">
-        <span>ION GRAMMA</span> {/* Теперь текст обернут в span */}
+      <div className="header_logo">
+        <div className="logo_part">ION</div>
+        <div className="logo_part">GRAMMA</div>
       </div>
       <nav className="header__navigation">
         {/* Используйте компонент Link для внутренней навигации */}
-        <Link to="/blog">Blog</Link>
-        <button onClick={scrollToMyself}>About Me</button> {/* Обновленный обработчик для About Me */}
-        <button onClick={scrollToExperience}>About exp</button>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/blog" className="blog">Blog</Link>
+        <button className='about_me' onClick={scrollToMyself}>About me</button> {/* Обновленный обработчик для About Me */}
+        <button className='about_exp' onClick={scrollToExperience}>About exp</button>
+        <Link to="/projects" className="projects">Projects</Link>
+        <Link to="/contact" className="contact">Contact</Link>
       </nav>
 
     </header>
