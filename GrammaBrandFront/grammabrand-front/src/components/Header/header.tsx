@@ -25,8 +25,8 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, myselfRef }) => {
         <img src="header_logo_112x112.png" alt="Logo" className="header__logo-img" />
       </Link>
       <div className="header_logo">
-        <div className="logo_part">ION</div>
-        <div className="logo_part">GRAMMA</div>
+        <div className="logo_part_s">ION</div>
+        <div className="logo_part_f">GRAMMA</div>
       </div>
       <nav className="header__navigation">
         {/* Используйте компонент Link для внутренней навигации */}

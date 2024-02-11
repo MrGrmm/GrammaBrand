@@ -29,7 +29,8 @@ function App() {
         </Routes>
       <main className="main">
         {/* Привязываем ref к Myself */}
-        <Myself myselfRef={myselfRef} />        <div className="vertical-line"></div>
+        <Myself myselfRef={myselfRef} />
+        <div className="vertical-line"></div>
       <div className="education">
         <Education />
       </div>

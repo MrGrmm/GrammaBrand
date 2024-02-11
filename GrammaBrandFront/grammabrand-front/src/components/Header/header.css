@@ -1,4 +1,6 @@
 /* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Newsreader:opsz,wght@6..72,800&display=swap');
+
 
 .header {
   background-color: #191919;
@@ -7,7 +9,6 @@
   display: flex;
   align-items: center;
   padding-right: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
@@ -22,18 +23,23 @@
   }
 
   .header_logo {
+    padding-top: 8px;
     align-items: center; /* Если вы хотите, чтобы текст был на одной линии с логотипом */
-    margin-left: -200px; /* Уменьшите значение, чтобы текст был ближе к логотипу */
-    /* остальные стили */
+    margin-left: -470px; /* Уменьшите значение, чтобы текст был ближе к логотипу */
+    font-family: 'Newsreader', serif;/* остальные стили */
   }
   
-  .logo_part {
-    font-size: 36px;
+  .logo_part_s,
+  .logo_part_f  {
+    font-size: 38px;
     font-weight: bold;
     /* Если элементы уже в порядке, margin-right можно не добавлять */
   }
 
+
   .header__navigation a {
+    font-size: 22px;
+    font-family: 'Irish Grover', system-ui;
     background-color: #191919; /* Цвет фона для кнопок */
     color: #fff; /* Цвет текста */
     padding: 10px 20px; /* Отступы внутри кнопок */
@@ -60,24 +66,10 @@
 
   .header__navigation .blog {
     border: 2px solid black; /* Замените #color3 на желаемый цвет рамки для кнопки "Projects" */
-
+ 
   }
 
-  .header__navigation .about_me {
-    background-color: #191919; /* Цвет фона кнопки */
-    color: #fff; /* Цвет текста */
-    padding: 10px 20px; /* Внутренние отступы */
-    border: 2px solid #191919; /* Толщина и цвет рамки */
-    border-radius: 5px; /* Радиус скругления углов */
-    font-size: 14px; /* Размер шрифта */
-    cursor: pointer; /* Вид курсора при наведении на кнопку */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
-    text-decoration: underline; /* Добавляет подчеркивание к тексту */
-
-  }
-  
-
-
+  .header__navigation .about_me,
   .header__navigation .about_exp {
     background-color: #191919; /* Цвет фона кнопки */
     color: #fff; /* Цвет текста */
@@ -88,7 +80,12 @@
     cursor: pointer; /* Вид курсора при наведении на кнопку */
     transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
     text-decoration: underline; /* Добавляет подчеркивание к тексту */
-}
+  }
+  .header__navigation .about_exp:hover,
+  .header__navigation .about_me:hover {
+    color: #555;
+  }
+
 
   .header__navigation a.projects {
     border: 2px solid white; /* Замените #color3 на желаемый цвет рамки для кнопки "Projects" */
