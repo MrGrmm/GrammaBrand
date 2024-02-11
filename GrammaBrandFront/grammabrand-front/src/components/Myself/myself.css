@@ -1,23 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Newsreader:opsz,wght@6..72,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 
 .myself {
+    flex-direction: column;
+    height: 675px;
     background-color: black;
     display: flex;
+    flex-direction: row;
 }
 
 .myself_photo {
-    width: 586px; /* Устанавливаем ширину фотографии */
-    height: 675px; /* Устанавливаем высоту фотографии */
+    width: 506px; /* Устанавливаем ширину фотографии */
+    height: 695px; /* Устанавливаем высоту фотографии */
     object-fit: cover; /* Обеспечиваем, чтобы изображение покрывало всю область, сохраняя свои пропорции */
     margin-right: 20px; /* Добавляем отступ справа от фотографии, если есть дополнительный контент */
 }
-
-.stack_text h2,
-.stack_text p {
+.stack_text{
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 400px;
+    font-size: 20px; /* Размер шрифта для абзацев */
+    color: #5c5c5c;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    width: 400px;
+    height: 240px;
+}
+.stack_text h2{
     margin-top: 40px;
     margin-left: 50px;
-    width: 450px;
+    width: 500px;
     font-size: 22px; /* Размер шрифта для абзацев */
+    color: #5c5c5c;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+}
+.stack_label {
+
+    width: 500px;
+    font-size: 20px; /* Размер шрифта для абзацев */
+    color: #5c5c5c;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+}
+.stack_text_add {
+    display: inline-flex;
+    margin-left: 5px;
+    width: 230px;
+    font-size: 20px; /* Размер шрифта для абзацев */
     color: #5c5c5c;
     font-family: 'Newsreader', serif;
     font-style: italic;
@@ -33,16 +64,29 @@
     /* Добавьте дополнительные стили для заголовка, если нужно */
 }
 
-.myself-text h2 {
-    font-size: 32px; /* Размер шрифта для подзаголовков */
+
+.myself_text {
+    font-size: 24px;
+    font-variant-caps: all-small-caps;
+    font-family: 'Inter', sans-serif;
+    color: rgb(145, 145, 145);
+    width: 800px; /* Установите ширину блока */
+    margin-left: -800px; /* Для выравнивания блока вправо */
+    margin-right: 20px; /* Отступ справа, если необходим */
+    margin-top: 300px; /* Отступ сверху, чтобы переместить блок вверх под stack_text */
+} 
+
+.ab {
     color: white;
-    /* Добавьте дополнительные стили для подзаголовков, если нужно */
+    font-size: 48px;
+    writing-mode: vertical-lr; /* или vertical-rl, в зависимости от того, в каком направлении вы хотите расположить текст */
+    text-orientation: upright; /* Это заставит каждую букву стоять прямо, */
 }
 
-.myself-text p {
-    font-size: 18px; /* Размер шрифта для абзацев */
-    color: #5c5c5c;
-    font-family: 'Newsreader', serif;
-    font-style: italic;
-    /* Добавьте дополнительные стили для абзацев, если нужно */
+.ms {
+    color: white;
+    width: 5px;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
 }

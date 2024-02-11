@@ -14,16 +14,18 @@ const MySelf: React.FC<MyselfProps> = ({ myselfRef }) => {
         <h2>Stack:</h2>
         <p>beck-end:  Django (Python) </p>
         <p>front-end: React (TypeScript)</p>
-        <p>additionally: C#, HTML, CSS,
-                       aiogram, SQLite,
-                      PostgreeSQL, Figma </p>
+        <p>
+          <span className="stack_label">additionally:</span>
+          <span className="stack_text_add">C#, HTML, CSS, aiogram, SQLite, PostgreSQL, Figma</span>
+        </p>
       </div>
       <div className="fullname">
         <h1>ION</h1>
         <h1>GRAMMA</h1>
       </div>
       <div className="myself_text">
-        <h2>ABOUT MYSELF</h2>
+        <span className='ab'>ABOUT</span>
+        <span className='ms'>MYSELF</span>
         <p>Experienced in teamwork and sales,
         I possess skills in communication and strategic planning.
         I have experience in telemarketing, developing websites,
