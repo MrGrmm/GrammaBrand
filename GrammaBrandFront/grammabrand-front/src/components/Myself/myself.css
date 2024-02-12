@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Newsreader:opsz,wght@6..72,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 .myself {
     flex-direction: column;
@@ -17,15 +18,15 @@
     margin-right: 20px; /* Добавляем отступ справа от фотографии, если есть дополнительный контент */
 }
 .stack_text{
+    margin-top: -10px;
     margin-left: 80px;
-    margin-top: 10px;
     width: 400px;
     font-size: 20px; /* Размер шрифта для абзацев */
     color: #5c5c5c;
-    font-family: 'Newsreader', serif;
+    font-family: 'Shadows Into Light';
     font-style: italic;
     width: 400px;
-    height: 240px;
+
 }
 .stack_text h2{
     margin-top: 40px;
@@ -33,16 +34,16 @@
     width: 500px;
     font-size: 22px; /* Размер шрифта для абзацев */
     color: #5c5c5c;
-    font-family: 'Newsreader', serif;
-    font-style: italic;
+    font-family: 'Shadows Into Light';
+
 }
 .stack_label {
 
     width: 500px;
     font-size: 20px; /* Размер шрифта для абзацев */
     color: #5c5c5c;
-    font-family: 'Newsreader', serif;
-    font-style: italic;
+    font-family: 'Shadows Into Light';
+
 }
 .stack_text_add {
     display: inline-flex;
@@ -50,8 +51,8 @@
     width: 230px;
     font-size: 20px; /* Размер шрифта для абзацев */
     color: #5c5c5c;
-    font-family: 'Newsreader', serif;
-    font-style: italic;
+    font-family: 'Shadows Into Light';
+
     /* Добавьте дополнительные стили для абзацев, если нужно */
 }
 
@@ -66,27 +67,39 @@
 
 
 .myself_text {
-    font-size: 24px;
+    font-size: 36px;
     font-variant-caps: all-small-caps;
     font-family: 'Inter', sans-serif;
     color: rgb(145, 145, 145);
-    width: 800px; /* Установите ширину блока */
+    width: 700px; /* Установите ширину блока */
     margin-left: -800px; /* Для выравнивания блока вправо */
     margin-right: 20px; /* Отступ справа, если необходим */
     margin-top: 300px; /* Отступ сверху, чтобы переместить блок вверх под stack_text */
 } 
 
+
 .ab {
+    font-family: 'Kirang Haerang', system-ui;
+    margin-left: -50px;
+    margin-top:75px;
     color: white;
-    font-size: 48px;
+    font-size: 90px;
     writing-mode: vertical-lr; /* или vertical-rl, в зависимости от того, в каком направлении вы хотите расположить текст */
     text-orientation: upright; /* Это заставит каждую букву стоять прямо, */
 }
 
 .ms {
+    font-family: 'Kirang Haerang', system-ui;
+    letter-spacing: 40px;
+    margin-left: 170px;
+    margin-top: -450px;
     color: white;
     width: 5px;
-    font-size: 48px;
+    font-size: 70px;
     display: flex;
     flex-direction: column;
+}
+.myself_text p {
+    margin-top: 12px;
+    margin-left: 100px;
 }
