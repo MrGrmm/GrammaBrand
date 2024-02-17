@@ -60,8 +60,7 @@
 .fullname h1 {
     font-size: 76px; /* Размер шрифта для главного заголовка */
     color: white;
-    font-family: 'Newsreader', serif;/* остальные стили */
-
+    font-family: 'Newsreader', sans-serif;
     /* Добавьте дополнительные стили для заголовка, если нужно */
 }
 
@@ -100,6 +99,6 @@
     flex-direction: column;
 }
 .myself_text p {
-    margin-top: 12px;
+    margin-top: 8px;
     margin-left: 100px;
 }
