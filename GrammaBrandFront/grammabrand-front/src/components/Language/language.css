@@ -11,7 +11,7 @@
 .language h1 {
     font-size: 36px; /* Большой размер шрифта для заголовков */
     letter-spacing: 15px;
-    margin-left: 30px;
+    margin-left: 80px;
     margin-bottom: 10px; /* Отступ снизу для заголовков */
     font-family: 'Newsreader', sans-serif;
 }
@@ -20,7 +20,7 @@
     list-style-type: none; /* Удаление маркеров списка */
     font-size: 18px; /* Размер шрифта для абзацев и элементов списка */
     margin-bottom: 10px; /* Отступ снизу для абзацев и элементов списка */
-    margin-left: 80px;
+    margin-left: 130px;
     font-family: 'Archivo Black', sans-serif;
 
 }

@@ -9,7 +9,7 @@ import Projects from './components/Projects/projects';
 import Contact from './components/Contact/contact';
 import './App.css';
 import React, { useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 
 function App() {
@@ -22,11 +22,6 @@ function App() {
     <div className="App">
       {/* Передаем оба ref в Header */}
       <Header experienceRef={experienceRef} myselfRef={myselfRef} />
-        {/* <Routes>
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes> */}
       <main className="main">
         {/* Привязываем ref к Myself */}
         <Myself myselfRef={myselfRef} />
@@ -43,6 +38,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    
   );
 }
 
