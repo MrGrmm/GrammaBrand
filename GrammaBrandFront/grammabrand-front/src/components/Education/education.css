@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Newsreader:opsz,wght@6..72,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 .education {
+    margin-top: 70px;
     margin-left: 20px;
     width: 487px;
     background-color: #000000;
@@ -7,23 +11,37 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-.education h1, .education h2 {
+.education h1 {
     font-size: 36px; /* Большой размер шрифта для заголовков */
+    letter-spacing: 15px;
+    margin-left: 30px;
     margin-bottom: 10px; /* Отступ снизу для заголовков */
+    font-family: 'Newsreader', sans-serif;
+
+
 }
+
+.education h2 {
+    font-size: 24px; /* Большой размер шрифта для заголовков */
+    margin-left: 75px;
+    margin-bottom: 10px; /* Отступ снизу для заголовков */
+    font-family: 'Archivo Black', sans-serif;
+    text-decoration: underline;
+    color: rgba(195, 195, 195, 0.699);
+}
+    
 
 .education p, .education li {
     font-size: 18px; /* Размер шрифта для абзацев и элементов списка */
     margin-bottom: 5px; /* Отступ снизу для абзацев и элементов списка */
+    margin-left: 92px;
+    font-family: 'Archivo Black', sans-serif;
+    list-style-type: none; /* Удаление маркеров списка */
+
+
 }
 
-.online-trainings ul {
-    list-style-type: none; /* Убрать маркеры списка */
-    padding: 0; /* Убрать отступы у списка */
+.education h6{
+    margin-left: 25px;
+    color: rgba(195, 195, 195, 0.699);
 }
-
-.online-trainings li {
-    margin-bottom: 5px; /* Отступ снизу для элементов списка */
-}
-
-/* Добавьте любые дополнительные стили, которые вы хотите применить к секции */

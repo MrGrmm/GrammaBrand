@@ -1,8 +1,8 @@
 .experience {
-    width: 800px;
-    height: 700px;
-    margin-top: -430px;
-    margin-left: 550px;
+    width: auto;
+    height: auto;
+    margin-top: -300px;
+    margin-left: 300px;
     background-color: #000000;
     color: white;
     padding: 20px;
@@ -10,25 +10,39 @@
 }
 
 .experience h1 {
-    font-size: 36px; /* Большой размер шрифта для заголовков */
-    margin-bottom: 10px; /* Отступ снизу для заголовков */
+    font-family: 'Kirang Haerang', system-ui;
+    letter-spacing: 20px;
+    margin-left: 90px;
+    color: white;
+    width: 5px;
+    font-size: 56px;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .experience h2 {
+    color: #ffffff8b;
     font-size: 24px; /* Размер шрифта для подзаголовков */
     margin-bottom: 5px; /* Отступ снизу для подзаголовков */
+    font-family: 'Archivo Black', sans-serif;
 }
 
-.experience p {
-    font-size: 18px; /* Размер шрифта для абзацев */
-    margin-bottom: 5px; /* Отступ снизу для абзацев */
+.experience h6 {
+    font-size: 8px;
+    color: #fff;
+    letter-spacing: 15px;
+    margin-left: 70px;
+    font-family: 'Krona One', sans-serif;
+
+
 }
 
-.experience-item {
-    margin-bottom: 20px; /* Отступ между блоками опыта */
-    white-space: nowrap; /* если есть, попробуйте удалить или изменить на normal */
-    word-break: break-all; /* если есть, попробуйте удалить или изменить на normal */
-    width: 100%; /* убедитесь, что ширина достаточная для содержимого */
+
+.experience li {
+    font-size: 24px;
+    font-family: 'Kirang Haerang', system-ui;
+
 }
 
 .experience-item ul {
@@ -44,6 +58,7 @@
 }
 
 .experience-item li::before {
+    
     content: ''; /* Псевдоэлемент для кастомного маркера */
     position: absolute;
     left: 0; /* Позиция слева */
@@ -51,7 +66,7 @@
     transform: translateY(-50%); /* Смещение псевдоэлемента для центрирования */
     width: 8px; /* Ширина маркера */
     height: 8px; /* Высота маркера */
-    background-color: #fff; /* Белый цвет маркера */
+    background-color: #ffffff8b;
     border-radius: 50%; /* Круглый маркер */
 }
 

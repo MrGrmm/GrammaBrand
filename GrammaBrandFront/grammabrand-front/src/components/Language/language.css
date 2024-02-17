@@ -1,6 +1,8 @@
 .language {
-    margin-left: 20px;
+    display: block;
+    margin-top: -250px;
     width: 487px;
+    height: 220px;
     background-color: #000000;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,17 +10,21 @@
 
 .language h1 {
     font-size: 36px; /* Большой размер шрифта для заголовков */
+    letter-spacing: 15px;
+    margin-left: 30px;
     margin-bottom: 10px; /* Отступ снизу для заголовков */
+    font-family: 'Newsreader', sans-serif;
 }
 
 .language ul {
-    list-style: none; /* Убрать маркеры списка */
-    padding: 0; /* Убрать отступы у списка */
+    list-style-type: none; /* Удаление маркеров списка */
+    font-size: 18px; /* Размер шрифта для абзацев и элементов списка */
+    margin-bottom: 10px; /* Отступ снизу для абзацев и элементов списка */
+    margin-left: 80px;
+    font-family: 'Archivo Black', sans-serif;
+
 }
 
-.language li {
-    font-size: 18px; /* Размер шрифта для каждого пункта */
-    margin-bottom: 5px; /* Отступ между пунктами */
-}
-
-/* Добавьте любые дополнительные стили, которые вы хотите применить к секции */
+.proficiency {
+    color: #a2a2a2; /* или любой цвет, который вы хотите использовать */
+  }

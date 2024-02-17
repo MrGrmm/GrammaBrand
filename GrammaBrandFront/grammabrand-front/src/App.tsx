@@ -22,11 +22,11 @@ function App() {
     <div className="App">
       {/* Передаем оба ref в Header */}
       <Header experienceRef={experienceRef} myselfRef={myselfRef} />
-        <Routes>
+        {/* <Routes>
           <Route path="/blog" element={<Blog />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes>
+        </Routes> */}
       <main className="main">
         {/* Привязываем ref к Myself */}
         <Myself myselfRef={myselfRef} />
@@ -34,7 +34,9 @@ function App() {
       <div className="education">
         <Education />
       </div>
+      <div className='experience'>
       <Experience experienceRef={experienceRef} /> {/* Передаем ref в Experience */}
+      </div>
       <div className="language">
         <Language />
       </div>

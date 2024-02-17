@@ -25,7 +25,7 @@ const MySelf: React.FC<MySelfProps> = ({ myselfRef }) => {
                 // Получаем данные MySelf
         const selfResponse = await axios.get('http://127.0.0.1:8000/api/myself/');
         setMySelfData(selfResponse.data[0]);
-
+        
       } catch (error) {
         console.error('There was an error fetching the myself data', error);
       }
@@ -36,7 +36,7 @@ const MySelf: React.FC<MySelfProps> = ({ myselfRef }) => {
 
 
 
-  
+
   const first_name = mySelfData?.full_name.split(' ')[0] || '';
   const last_name = mySelfData?.full_name.split(' ')[1] || '';
   const about_myself = mySelfData?.about_myself
