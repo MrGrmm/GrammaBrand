@@ -55,6 +55,11 @@ const Footer = () => {
           </div>
         )}
       </div>
+      <div className='footer__contact-img'>
+        <img src="location.svg" alt='arrow'></img>
+        <img src="gmail.svg" alt='arrow'></img>
+        <img src="telephone.svg" alt='arrow'></img>
+      </div>
       <div className="footer__logo">
         <Link to="/">
           <img src="footer_logo_name.svg" alt="ION GRAMMA" />
@@ -75,8 +80,9 @@ const Footer = () => {
           </div>
         )}
       </div>
-      <div className="footer__activation">
-        <a href="/activation-link">Click to open link</a>
+      <div className="footer__arrow">
+        <h6>Click to open link</h6>
+        <img src="right-arrow.svg" alt='arrow'></img>
       </div>
     </footer>
   );

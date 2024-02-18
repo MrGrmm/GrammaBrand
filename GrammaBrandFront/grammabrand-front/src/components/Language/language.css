@@ -1,8 +1,8 @@
 .language {
     display: block;
-    margin-top: -250px;
+    margin-top: -275px;
     width: 487px;
-    height: 220px;
+    height: 300px;
     background-color: #000000;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,17 +12,21 @@
     font-size: 36px; /* Большой размер шрифта для заголовков */
     letter-spacing: 15px;
     margin-left: 80px;
-    margin-bottom: 10px; /* Отступ снизу для заголовков */
+    margin-bottom: 30px; /* Отступ снизу для заголовков */
     font-family: 'Newsreader', sans-serif;
 }
 
 .language ul {
+    
     list-style-type: none; /* Удаление маркеров списка */
     font-size: 18px; /* Размер шрифта для абзацев и элементов списка */
-    margin-bottom: 10px; /* Отступ снизу для абзацев и элементов списка */
     margin-left: 130px;
     font-family: 'Archivo Black', sans-serif;
 
+}
+.language ul li {
+  margin-top: 10px; /* Расстояние сверху для каждого элемента списка */
+  margin-bottom: 10px; /* Расстояние снизу для каждого элемента списка */
 }
 
 .proficiency {

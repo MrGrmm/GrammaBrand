@@ -9,34 +9,66 @@
 }
 
 .footer__contact-info p {
-    margin: 0;
-    padding: 5px 0; /* Вертикальные отступы для параграфов */
+    padding-top: 10px;
+    text-align: right;
+    padding-left: 160px;
+    margin-bottom: 55px;
+    font-family: 'Nothing You Could Do';
+    font-style: italic;
+    font-weight: 1; /* Слегка увеличенная жирность по сравнению с нормальной */
+
+}
+
+.footer__contact-img {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px; /* расстояние между элементами */    color: white; /* Цвет текста ссылок */
+    text-decoration: none; /* Убрать подчёркивание текста */
 }
 
 .footer__logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 386px; /* Размер логотипа */
     height: 338px;
 }
 
 .footer__social-links a {
+    margin-left: 550px;
     display: flex;      /* Используем flexbox */
     flex-direction: column; /* Элементы внутри контейнера будут располагаться вертикально */
     align-items: center; /* Выравниваем элементы по центру по горизонтали */
     justify-content: center; /* Выравниваем элементы по центру по вертикали */  
-    margin-bottom: 20px; /* Отступ справа для ссылок */
+    margin-bottom: 25px; /* Отступ справа для ссылок */
     color: white; /* Цвет текста ссылок */
     text-decoration: none; /* Убрать подчёркивание текста */
 }
 
-.footer__social-links a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+
+
+.footer__arrow h6{
+    transform: rotate(45deg); /* поворачивает текст на 45 градусов */
+    text-align: center; /* центрирует текст по горизонтали */
+    width: 120px;
+    height: 20px;
+    margin-left: 250px;
+    margin-right: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-family: 'Nothing You Could Do';
+    font-style: italic;
+    font-weight: 1; /* Слегка увеличенная жирность по сравнению с нормальной */
+
 }
 
-.footer__activation a {
-    color: white; /* Цвет текста */
-    text-decoration: none; /* Убрать подчёркивание текста */
-}
-
-.footer__activation a:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+.footer__arrow img {
+    position: relative; /* или 'absolute' */
+    top: -50px; /* Сдвиг вверх */
+    left: 50px; /* Сдвиг влево, если необходимо */
 }
