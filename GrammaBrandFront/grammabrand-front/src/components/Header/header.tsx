@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ experienceRef, myselfRef }) => {
   return (
     <header className="header">
       <Link to="/">
-        <img src="header_logo_112x112.png" alt="Logo" className="header__logo-img" />
+        <img src="header_logo_112x112.png" alt="Logo" className="header__logo_112x112" />
       </Link>
       <div className="header_logo">
         <div className="logo_part_s">ION</div>
