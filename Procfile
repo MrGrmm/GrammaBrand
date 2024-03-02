@@ -1,1 +1,1 @@
-web: gunicorn gramma-brand.wsgi
+web: python manage.py runserver
